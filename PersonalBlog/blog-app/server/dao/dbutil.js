@@ -12,7 +12,8 @@ const mysql = require('mysql');
 
 function createConnection() {
   let connection = mysql.createConnection({
-    host: '127.0.0.1',
+    // 端口改成无线局域网的端口
+    host: '192.168.101.5',
     port: '3306',
     user: 'root',
     password: '123456',
