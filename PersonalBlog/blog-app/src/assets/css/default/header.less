@@ -1,0 +1,127 @@
+// 头部
+
+// 动画
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+// 导航条
+.header-container {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // 标题
+  .title {
+    flex: 3;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 3px 3px 8px #ccc;
+      animation: jump 1s infinite alternate;
+    }
+
+    span:nth-of-type(1) {
+      animation-delay: 0.1s;
+    }
+
+    span:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+
+    span:nth-of-type(3) {
+      animation-delay: 0.3s;
+    }
+
+    span:nth-of-type(4) {
+      animation-delay: 0.5s;
+    }
+
+    span:nth-of-type(5) {
+      animation-delay: 0.5s;
+    }
+
+    span:nth-of-type(6) {
+      animation-delay: 0.6s;
+    }
+
+    span:nth-of-type(7) {
+      animation-delay: 0.7s;
+    }
+
+    span:nth-of-type(8) {
+      animation-delay: 0.8s;
+    }
+
+    span:nth-of-type(9) {
+      animation-delay: 0.9s;
+    }
+
+  }
+
+  .title:hover {
+    color: #00c1de;
+  }
+
+  // 菜单
+  .menu {
+    flex: 4;
+    padding: 0 50px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        height: 50px;
+        width: 100px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        cursor: pointer;
+      }
+      li:hover {
+        color: #00c1de;
+      }
+      .active {
+        color: #00c1de;
+      }
+
+    }
+
+  }
+
+  // 搜索图标
+  .search-logo {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+
+    .el-icon-search {
+      cursor: pointer;
+    }
+  }
+
+}
+
+

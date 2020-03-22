@@ -1,0 +1,97 @@
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.header-container {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-container .title {
+  flex: 3;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.header-container .title span {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 3px 3px 8px #ccc;
+  animation: jump 1s infinite alternate;
+}
+.header-container .title span:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.header-container .title span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.header-container .title span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.header-container .title span:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+.header-container .title span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+.header-container .title span:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+.header-container .title span:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+.header-container .title span:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+.header-container .title span:nth-of-type(9) {
+  animation-delay: 0.9s;
+}
+.header-container .title:hover {
+  color: #00c1de;
+}
+.header-container .menu {
+  flex: 4;
+  padding: 0 50px;
+}
+.header-container .menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .menu ul li {
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.header-container .menu ul li:hover {
+  color: #00c1de;
+}
+.header-container .menu ul .active {
+  color: #00c1de;
+}
+.header-container .search-logo {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+}
+.header-container .search-logo .el-icon-search {
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.comment-show {
+  padding: 10px 10px 10px 0px;
+  width: 98%;
+}
+.comment-show .blog-comment_msg {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+.comment-show .blog-comment {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px 20px 0px;
+  background-color: #fffbf0;
+  border: 1px dashed #eee;
+  color: #31708f;
+  font-size: 16px;
+}
+.comment-show .blog-comment .username-content {
+  margin-left: 10px;
+}
+.comment-show .blog-comment .username-content .el-icon-user-solid {
+  color: #909399;
+  font-size: 26px;
+}
+.comment-show .blog-comment .username-content .username {
+  color: #909399;
+}
+.comment-show .blog-comment .username-content .parentName {
+  color: #F56C6C;
+}
+.comment-show .blog-comment .username-content a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.comment-show .blog-comment div {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0 0 10px;
+}
+/*# sourceMappingURL=showmessage.css.map */

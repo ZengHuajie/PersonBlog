@@ -1,0 +1,205 @@
+// 主要内容区
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.detail-container {
+  flex: 3;
+  padding: 20px;
+  width: 752px;
+  border: 1px solid #000;
+
+  // 文章部分
+  .blog-container {
+    padding: 20px 10px;
+    width: 98%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+
+    .blog-title {
+      margin-top: 10px;
+      h2 {
+        margin: 0;
+        display: inline-block;
+        font-size: 24px;
+      }
+      .tags {
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: orange;
+      }
+    }
+
+    .info {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+
+      .time {
+        color: #8c7853;
+      }
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #b9b9b9;
+    }
+  }
+
+  // 选择文章部分
+  .select-blog {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  // 评论展示区域
+  .comment-show {
+    padding: 10px 10px 10px 0px;
+    width: 98%;
+
+    .blog-comment_msg {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+    }
+
+    .blog-comment {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 0px 20px 0px;
+      background-color: #fffbf0;
+      border: 1px dashed #eee;
+      color: #31708f;
+      font-size: 16px;
+
+      .username-content {
+        margin-left: 10px;
+
+        .el-icon-user-solid {
+          color: #909399;
+          font-size: 26px;
+        }
+        .username {
+          color: #909399;
+        }
+        .parentName {
+          color: #F56C6C;
+        }
+        a {
+          cursor: pointer;
+        }
+      }
+
+      div {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0 0 10px;
+      }
+
+    }
+
+
+  }
+
+  // 评论区域
+  .comment-container {
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 98%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+
+    // 标签
+    .el-tag {
+      display: block;
+      margin-bottom: 20px;
+      width: 90px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+      color: #e6a23c;
+    }
+    // 昵称 邮箱 验证码
+    .nickname,
+    .useremail,
+    .vtext {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      -webkit-box-direction: normal;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+      -webkit-appearance: none;
+      background-color: #FFF;
+      background-image: none;
+      border-radius: 4px;
+      border: 1px solid #DCDFE6;
+      box-sizing: border-box;
+      color: #606266;
+      display: inline-block;
+      font-size: inherit;
+      line-height: 40px;
+      outline: 0;
+      padding: 0 15px;
+      transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    }
+    .useremail {
+      margin-left: 50px;
+    }
+    .usertext {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+    // 验证码
+    .verification {
+      position: relative;
+      .vtext {
+        width: 200px;
+      }
+      .vcode {
+        position: relative;
+      }
+      .vcode::after {
+        content: '点击验证码刷新';
+        position: absolute;
+        top: 18px;
+        left: 5px;
+        bottom: -2px;
+        font-size: 12px;
+        color: #f40;
+      }
+      .tips {
+        color: red;
+        font-size: 12px;
+      }
+
+    }
+    .verification::after {
+      display: none;
+      content: '点击验证码刷新';
+      position: absolute;
+      left: 35%;
+      bottom: -2px;
+      font-size: 12px;
+      color: #f40;
+    }
+
+    .commentbtn,
+    .empty{
+      width: 90px;
+      margin-top: 20px;
+    }
+
+  }
+
+}

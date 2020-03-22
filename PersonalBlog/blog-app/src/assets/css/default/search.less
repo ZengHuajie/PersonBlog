@@ -1,0 +1,55 @@
+// 搜索区
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  height: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+
+  .search-bar {
+    width: 70%;
+    height: 40px;
+
+    .search-container {
+      display: flex;
+      width: 70%;
+      height: 40px;
+      margin: 0 auto;
+
+      // 输入框
+      .search-input {
+        flex: 3;
+        height: 40px;
+        input {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      // 搜索按钮
+      .search-btn {
+        flex: 1;
+        margin-left: 5px;
+        background-color: #333;
+        border: none;
+      }
+
+    }
+  }
+
+  // 关闭按钮
+  .search-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+}
+
+

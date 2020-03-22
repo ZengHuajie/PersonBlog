@@ -1,0 +1,191 @@
+// 主要内容区
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.home-main {
+  flex: 3;
+  width: 752px;
+  //border: 1px solid #000;
+  // 主区域头部
+  .main-header {
+    display: flex;
+    margin: 0 auto;
+    width: 98%;
+    height: 330px;
+
+    // 左侧轮播图
+    .header-left {
+      position: relative;
+      flex: 2;
+
+      .el-carousel {
+
+        .banner {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        ul {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+
+      }
+
+
+    }
+    // 右侧图片
+    .header-right {
+      flex: 1;
+      margin-left: 10px;
+      ul {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        li {
+          position: relative;
+          height: 50%;
+          color: #fff;
+          cursor: pointer;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all .5s ease;
+          }
+
+          p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 16px;
+            transform: translate(-50%, -50%);
+          }
+        }
+        // 图片蒙层
+        li::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: all .7s;
+          background-color: #000;
+          opacity: .4;
+        }
+        li:hover::before {
+          opacity: 0;
+        }
+        li:hover img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+  }
+
+  // 文章部分
+  .article-list {
+    width: 98%;
+    min-width: 500px;
+    //height: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: #fff;
+
+    .article {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      //height: 180px;
+      margin: 10px auto 10px;
+      overflow: hidden;
+      text-align: left;
+      border: 1px dashed #eee;
+      // 标题
+      .article-title {
+        display: inline-block;
+        width: auto;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #13102b;
+        padding: 10px 10px 5px 10px;
+        text-align: left;
+        cursor: pointer;
+      }
+      .article-title:hover {
+        color: #337ab7;
+      }
+      // 内容
+      .article-content {
+        display: flex;
+        //height: 95px;
+        font-size: 14px;
+        color: #13102b;
+        padding: 0 10px 30px 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        div {
+          p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          overflow: hidden;
+        }
+      }
+      // 底部时间等
+      .article-footer {
+        color: #eee;
+        background-color: #1f1f1f;
+        width: 97%;
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+
+    }
+
+    // 分页
+    .turn-page {
+      position: relative;
+      height: 30px;
+      ul {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+        li {
+          float: left;
+          width: 30px;
+          height: 100%;
+          text-align: center;
+          line-height: 30px;
+          border: 1px solid #000;
+          cursor: pointer;
+        }
+        li:hover {
+          background-color: #8c939d;
+          color: #fff;
+        }
+
+        .now_page {
+          background-color: #333;
+          color: #fff;
+        }
+
+      }
+    }
+
+  }
+
+
+
+}

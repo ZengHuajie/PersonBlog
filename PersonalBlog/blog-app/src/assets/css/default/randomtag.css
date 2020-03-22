@@ -1,0 +1,24 @@
+.tag {
+  width: 100%;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.tag .tag-title {
+  margin-bottom: 5px;
+  padding: 15px 5px 15px 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 3px 3px 10px #ccc;
+  background-color: #191818;
+}
+.tag .tag-link {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #333;
+  cursor: pointer;
+}
+/*# sourceMappingURL=randomtag.css.map */
