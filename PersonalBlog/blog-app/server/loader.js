@@ -11,10 +11,10 @@ let controllerSet = [];
 let pathMap = new Map();
 
 // 读取web下的所有文件
-let files = fs.readdirSync(globalConf['web_path']);
+let files = fs.readdirSync(globalConf.web_path);
 
 for(let i = 0; i < files.length; i ++) {
-  let temp = require('./' + globalConf['web_path'] + '/' + files[i]);
+  let temp = require('./' + globalConf.web_path + '/' + files[i]);
   // 判断路径是否存在
   if(temp.path) {
     // 如果存在, 以键值对的形式遍历path
